@@ -1,0 +1,5 @@
+public class WebSite {
+    public Subscription createSubscription() {
+        return new DomesticSubscription(); // Проста реалізація
+    }
+}

@@ -1,0 +1,10 @@
+public class DomesticSubscription implements Subscription {
+    @Override
+    public double getMonthlyFee() { return 10.99; }
+
+    @Override
+    public int getMinimumPeriod() { return 6; }
+
+    @Override
+    public String getChannelList() { return "News, Sports, Movies"; }
+}

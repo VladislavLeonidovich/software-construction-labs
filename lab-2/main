@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+        WebSite site = new WebSite();
+        Subscription subscription = site.createSubscription();
+        System.out.println("Subscription: " + subscription.getChannelList());
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        DeviceFactory factory = new IProneFactory();
+        Laptop laptop = factory.createLaptop();
+        System.out.println("Created laptop: " + laptop.getModel());
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Authenticator auth1 = Authenticator.getInstance();
+        Authenticator auth2 = Authenticator.getInstance();
+        System.out.println(auth1 == auth2); // має вивести true
+    }
+}

@@ -1,0 +1,5 @@
+public interface Subscription {
+    double getMonthlyFee();
+    int getMinimumPeriod();
+    String getChannelList();
+}

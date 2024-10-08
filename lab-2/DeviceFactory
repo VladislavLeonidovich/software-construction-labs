@@ -1,0 +1,15 @@
+public interface DeviceFactory {
+    Laptop createLaptop();
+    Smartphone createSmartphone();
+}
+public class IProneFactory implements DeviceFactory {
+    @Override
+    public Laptop createLaptop() {
+        return new IProneLaptop();
+    }
+    
+    @Override
+    public Smartphone createSmartphone() {
+        return new IProneSmartphone();
+    }
+}
