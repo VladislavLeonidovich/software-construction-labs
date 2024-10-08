@@ -1,0 +1,16 @@
+class Money:
+    def __init__(self, amount: int, cents: int):
+        self.amount = amount
+        self.cents = cents
+    
+    def set_amount(self, amount):
+        self.amount = amount
+    
+    def set_cents(self, cents):
+        self.cents = cents
+    
+    def get_money(self):
+        return f"{self.amount} грн. і {self.cents} коп."
+
+    def __repr__(self):
+        return self.get_money()
